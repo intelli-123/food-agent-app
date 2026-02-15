@@ -107,7 +107,7 @@ We do not use hard-coded `if/else` logic for validation. Instead, we use **Syste
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/intelli-123/food-agent-app.git
 cd food-agent-app
 
 # Install dependencies
