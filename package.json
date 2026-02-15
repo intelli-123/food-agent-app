@@ -1,0 +1,18 @@
+{
+  "name": "food-agent-app",
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.1.24",
+    "@langchain/google-genai": "^2.1.18",
+    "@langchain/openai": "^1.2.7",
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "langchain": "^1.2.24",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.34.5"
+  }
+}
