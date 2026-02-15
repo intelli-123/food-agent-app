@@ -9,7 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
+gemini_ref.txt
 # testing
 /coverage
 

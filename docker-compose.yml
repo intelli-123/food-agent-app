@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  food-agent:
+    build: .
+    container_name: food-agent-container
+    ports:
+      - "3000:3000"
+    environment:
+      # Pass your keys here, or read from a local .env file
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PORT=3000
+    volumes:
+      # Map the uploads folder so you can see temp files if needed (optional)
+      - ./uploads:/app/uploads
+    restart: on-failure

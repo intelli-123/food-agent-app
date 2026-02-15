@@ -147,3 +147,24 @@ npm start
 
 4. **Step 3:** Once you have **2 valid images** and a description, the **Submit** button unlocks.
 5. **Step 4:** Click Submit to see the final Analysis Card in the feed.
+
+### 6. Docker
+1. Build Docker Image
+```bash
+docker build -t food-agent-app .
+```
+2. Run the Container
+```bash
+docker run -p 3000:3000 -e GOOGLE_API_KEY="your_key_here" food-agent-app
+```
+### 7. Using Docker Compose (Recommended)
+1. Make sure your .env file has your keys
+
+2. Run this command
+```bash
+docker-compose up --build
+```
+3. Remove Docker Images and Containers
+```bash
+docker compose down --rmi all --volumes
+```
