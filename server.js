@@ -8,6 +8,8 @@ dotenv.config();
 const app = express();
 const upload = multer({ dest: "uploads/" });
 
+const port = process.env.PORT || 3000;
+
 app.use(express.static("public"));
 app.use(express.json());
 
@@ -47,7 +49,10 @@ app.post("/api/identify", upload.array("foodImages", 5), async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
+
 
 
 
