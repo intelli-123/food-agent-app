@@ -1,4 +1,4 @@
-# 🛡️ AI Smart Food Intake Agent (Agentic AI)
+# 🛡️ AI-Smart Food Items Register (Agentic AI)
 
 A robust, multi-modal AI system designed for food delivery platforms. This application acts as an intelligent **"Content Gatekeeper"**, ensuring that only safe, high-quality, and accurate food images are accepted from merchants.
 
